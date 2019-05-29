@@ -1,6 +1,7 @@
 ## Strings
 Python Strings are __Immutable__ objects that cannot change their
 values.
+
 ```python
 >>> str1 = "strings are immutable!"
 >>> str1[0] = "S"
@@ -8,6 +9,7 @@ Traceback (most recent call last):
 File "<stdin>", line 1, in <module>
 TypeError: 'str' object does not support item assignment
 ```
+
 You can update an existing string by __(re)assigning a variable__ to
 another string.
 
@@ -16,26 +18,32 @@ strings of length one.
 
 Python accepts single (`'`), double (`"`) and triple (`'''` or `"""`)
 quotes to denote string literals.
+
 ```python
 str1 = 'str1' 
 str2 = '''str2''' 
 str3 = "str3"
 str4 = """str4""" 
 ```
+
 String indexes starting at `0` in the __beginning of the string__ and
 working their way from `-1` at the __end of string__.
+
 ```
 positive indexes    >>      | 0 | 1 | 2 | 3 | 4 |
 string is 'HELLO'   >>      | H | E | L | L | O |
 negative indexes    >>      |-5 |-4 |-3 |-2 |-1 |
 ```
-string formatting
+
+String formatting
+
 ```python
 >>> num = 6
 >>> string = "I have {} books!".format(num)
 >>> print(string)
 I have 6 books!
 ```
+
 Common String Operators, Assume: `a='Hello'` and `b='Python'`
 
 |Operator|Description|Example|

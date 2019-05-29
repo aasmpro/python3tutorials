@@ -1,5 +1,6 @@
 ## PIP Package Manager
 __Windows:__ Python installer will install pip too.
+
 [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/)
 
 __Ubuntu/Debian:__

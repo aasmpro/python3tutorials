@@ -1,5 +1,5 @@
 ## Python
-__Python__ is a __high-level__ programming language which is:
+is a __high-level__ programming language which is:
 - __Interpreted:__ Python is processed at run time by the
 interpreter.
 - __Interactive:__ You can use a Python prompt and interact with the

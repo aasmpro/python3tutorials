@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>python 3 tutorials</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bootstrap core CSS -->
+    <!--    <link rel="stylesheet" href="static/css/bootstrap.css">-->
+
+    <!-- webfonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <style>
+        html,
+        body {
+            height: 100% !important;
+            color: white;
+            background-color: #2b2d42;
+            font-family: 'Roboto Mono', monospace;
+            text-align: left;
+        }
+
+        input, button, input:focus, button:focus {
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+        body #python3tutorials a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #0056b3;
+            padding: 3px 15px;
+            border-radius: 50rem !important;
+        }
+
+        .container #buttons > button {
+            background-color: #d90429;
+        }
+
+        strong {
+            color: #ffc107;
+        }
+
+        table {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            background-color: #222333;
+            width: 100%;
+        }
+
+        td, th {
+            padding: 3px 20px;
+        }
+
+        table > thead > tr > th {
+            padding-top: 15px;
+        }
+
+        table > tbody > tr:last-of-type > td {
+            padding-bottom: 15px;
+        }
+
+        code {
+            color: #ff0431;
+            font-weight: bold;
+            font-size: 1.08em;
+        }
+
+        pre {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            padding: 15px 20px;
+            background-color: #222333;
+        }
+
+        pre code {
+            color: #ffffff;
+            font-weight: normal;
+            font-size: 1.05em;
+        }
+
+        footer {
+            background-color: #222333;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column">
+<div id="python3tutorials">
+    <div class="container">
+        <div class="mt-5" v-html="mainContent">
+            {{mainContent}}
+        </div>
+        <div id="buttons" :class="[ buttonsContent ]" class="d-flex my-5">
+            <button :class="[ showPrevious ]" class="btn btn-primary rounded-pill" id="previous"
+                    v-on:click="previousFile"><i class="fas fa-chevron-left"></i> {{previousText}}
+            </button>
+            <button :class="[ showNext ]" class="btn btn-primary rounded-pill" id="next" v-on:click="nextFile">
+                {{nextText}} <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+</div>
+<footer class="footer mt-auto pt-4">
+    <div class="container">
+        <div class="row py-4">
+            <div class="col-md-4">
+                <h6 class="text-white-50">Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="https://github.com/aasmpro/python3tutorials/tree/master/examples"
+                           class="text-white text-decoration-none">Examples</a></li>
+                    <li><a href="https://github.com/aasmpro/python3tutorials/" class="text-white text-decoration-none">Github</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-white-50">Dark Theme</h6>
+                <ul class="list-unstyled">
+                    <li><a href="pdf/python3tuturials.dark.pdf" class="text-white text-decoration-none">Download PDF</a>
+                    </li>
+                    <li><a href="odp/python3tuturials.dark.odp" class="text-white text-decoration-none">Download ODP</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h6 class="text-white-50">Light Theme</h6>
+                <ul class="list-unstyled">
+                    <li><a href="pdf/python3tuturials.pdf" class="text-white text-decoration-none">Download PDF</a></li>
+                    <li><a href="odp/python3tuturials.odp" class="text-white text-decoration-none">Download ODP</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
+
+<!-- Bootstrap core JS -->
+<!--<script src="static/js/jquery-3.4.1.min.js"></script>-->
+<!--<script src="static/js/popper.js"></script>-->
+<!--<script src="static/js/bootstrap.js"></script>-->
+<!--<script src="static/js/vue.js"></script>-->
+<!--<script src="static/js/markdown-it.min.js"></script>-->
+
+<script>
+    var trust_or_dare = new Vue({
+        el: '#python3tutorials',
+        data: {
+            files: [
+                {path: 'md/0_python.md', name: "Introduction"},
+                {path: 'md/1_history.md', name: "History"},
+                {path: 'md/2_features.md', name: "Features"},
+                {path: 'md/3_versions.md', name: "Versions"},
+                {path: 'md/4_python2_vs_python3.md', name: "Python 2 vs Python 3"},
+                {path: 'md/5_installation.md', name: "Installation"},
+                {path: 'md/6_pip_package_manager.md', name: "PIP Package Manager"},
+                {path: 'md/7_basic_syntax.md', name: "Basic Syntax"},
+                {path: 'md/8_numbers.md', name: "Numbers"},
+                {path: 'md/9_strings.md', name: "Strings"},
+                {path: 'md/10_lists.md', name: "Lists"},
+                {path: 'md/11_tuples.md', name: "Tuples"},
+                {path: 'md/12_dictionaries.md', name: "Dictionaries"},
+                {path: 'md/13_conditionals.md', name: "Conditionals"},
+                {path: 'md/14_loops.md', name: "Loops"},
+                {path: 'md/15_functions.md', name: "Functions"},
+                {path: 'md/16_working_with_files.md', name: "Working With Files"},
+                {path: 'md/17_exception_handling.md', name: "Exception Handling"},
+                {path: 'md/18_modules.md', name: "Modules"},
+                {path: 'md/19_object_oriented_programming.md', name: "Object Oriented Programming"},
+                {path: 'md/20_tips_and_tools.md', name: "Tips and Tools"},
+            ],
+            currentFileIndex: 0,
+            previousText: '',
+            nextText: 'History',
+            showPrevious: 'd-none',
+            showNext: '',
+            buttonsContent: 'justify-content-end'
+        },
+        computed: {
+            mainContent: function () {
+                function getText(myUrl) {
+                    var result = null;
+                    jQuery.ajax({
+                            url: myUrl,
+                            type: 'get',
+                            dataType: 'html',
+                            async: false,
+                            success: function (data) {
+                                result = data;
+                            }
+                        }
+                    );
+                    FileReady = true;
+                    return result;
+                }
+
+                var markdownSource = getText(this.files[this.currentFileIndex].path);
+                var md = window.markdownit();
+                return md.render(markdownSource);
+            }
+        },
+        methods: {
+            nextFile: function () {
+                if (this.currentFileIndex < this.files.length) {
+                    this.showPrevious = '';
+                    this.previousText = this.files[this.currentFileIndex].name;
+                    this.currentFileIndex += 1;
+                    if (this.currentFileIndex + 1 < this.files.length) {
+                        this.nextText = this.files[this.currentFileIndex + 1].name;
+                        this.showNext = '';
+                        this.buttonsContent = 'justify-content-between'
+                    } else {
+                        this.showNext = 'd-none';
+                        this.buttonsContent = 'justify-content-start'
+                    }
+                }
+            },
+
+            previousFile: function () {
+                if (this.currentFileIndex > 0) {
+                    this.showNext = '';
+                    this.nextText = this.files[this.currentFileIndex].name;
+                    this.currentFileIndex -= 1;
+                    if (this.currentFileIndex - 1 >= 0) {
+                        this.previousText = this.files[this.currentFileIndex - 1].name;
+                        this.showPrevious = '';
+                        this.buttonsContent = 'justify-content-between'
+                    } else {
+                        this.showPrevious = 'd-none';
+                        this.buttonsContent = 'justify-content-end'
+                    }
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>
