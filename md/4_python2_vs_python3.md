@@ -1,0 +1,42 @@
+## Python 2 vs Python 3
+- `print` statement has been replaced with `print()` function.
+    ```python
+    # python 2
+    print "Hello World!"
+    # python 3
+    print("Hello World!")
+    ```
+- There is only one integer type left, `int`.
+- Some methods such as `map()` and `filter()` return iterator objects
+in Python 3 instead of lists in Python 2.
+- In Python 3, a `TypeError` is raised as warning if we try to
+compare unorderable types. e.g. `0 > None` is no longer valid.
+- Python 3 provides Unicode (utf-8) strings while Python 2 has
+ASCII `str()` types and separate `unicode()`.
+- A new built-in string formatting method `format()` replaces the `%`
+string formatting operator.
+- In Python 3, we should __enclose__ the __exception argument__ in
+parentheses.
+    ```python
+    # python 2
+    raise IOError, "file error"
+    # python 3
+    raise IOError("file error")
+    ```
+- In Python 3, we have to use the `as` keyword now in the handling
+of __exceptions__.
+    ```python
+    # python 2
+    Try:
+        ...
+    except NameError, err:
+        ...
+        
+    # python 3
+    Try:
+        ...
+    except NameError as err:
+        ...
+    ```
+- The __division__ of two integers returns a `float` instead of an
+`int`. `//` can be used to have the old behavior.
