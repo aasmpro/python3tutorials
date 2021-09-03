@@ -1,0 +1,154 @@
+## Site settings
+site_name: Python 3 Tutorials
+site_url: https://abolfazlamiri.ir/python3tutorials
+site_author: Abolfazl Amiri
+site_description: Starter to intermediate python 3 tutorial with examples.
+
+## Repo settings
+repo_name: Python3Tutorials
+repo_url: https://github.com/aasmpro/python3tutorials
+edit_uri: ""
+
+## Theme settings
+theme:
+  name: material
+  custom_dir: docs/overrides
+  ### comment these lines,
+  ### if you want to use default material theme
+  palette:
+    scheme: gruvbox
+    primary: blue
+    accent: blue
+  ### uncomment to use default material theme
+  # palette:
+  #   scheme: default
+  favicon: assets/images/favicon.png
+  icon:
+    logo: assets/images/favicon.svg
+  logo: assets/images/favicon.svg
+  features:
+    - search.highlight
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.top
+    - toc.integrate
+
+## Extra data
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/aasmpro
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/aasmpro/
+    - icon: octicons/dot-fill-24
+      link: https://abolfazlamiri.ir
+
+  ## Version
+  ### this extra key generates a version text after copyright
+  ### must have name and link
+  # version:
+  #   name: v1.0.0
+  #   link: https://github.com/aasmpro/gruvdoc/releases/tag/v1.0.0
+
+  ## License
+  ### this extra key generates a license text after copyright
+  ### must have name and link
+  license:
+    name: GPL3+
+    link: https://github.com/aasmpro/python3tutorials/blob/master/LICENSE
+
+  ## Made with
+  ### this extra key can set `Made with ...` text in footer
+  ### set true to get default one
+  ### comment for set false to remove
+  ### or set your custom text!
+  made_with: true
+
+## Navigation
+use_directory_urls: true
+
+### this is for manual nav configs
+### uncomment to config nav manually
+nav:
+  - Home: index.md
+  - Introduction: 00_introduction.md
+  - History: 01_history.md
+  - Features: 02_features.md
+  - Version: 03_versions.md
+  - 2 vs 3: 04_2vs3.md
+  - Installation: 05_installation.md
+  - PIP: 06_pip.md
+  - Basic Syntax: 07_basic_syntax.md
+  - Numbers: 08_numbers.md
+  - Strings: 09_strings.md
+  - Lists: 10_lists.md
+  - Tuples: 11_tuples.md
+  - Dictionaries: 12_dictionaries.md
+  - Conditionals: 13_conditionals.md
+  - Loops: 14_loops.md
+  - Functions: 15_functions.md
+  - Files: 16_files.md
+  - Exceptions: 17_exceptions.md
+  - Modules: 18_modules.md
+  - OOP: 19_oop.md
+  - Tips & tools: 20_tips_and_tools.md
+
+## Copyright
+copyright: Python 3 Tutorials
+
+## Extra js files
+extra_javascript:
+  - assets/javascripts/tablesort.js
+
+## Extra css files
+### comment these lines,
+### if you want to use default material theme
+extra_css:
+  - assets/stylesheets/fonts.css
+  - assets/stylesheets/vars.css
+  - assets/stylesheets/scheme.css
+  - assets/stylesheets/primary.css
+  - assets/stylesheets/accent.css
+  - assets/stylesheets/admonitions.css
+  - assets/stylesheets/fixes.css
+  - assets/stylesheets/styles.css
+
+## Extension settings
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - meta
+  - toc:
+      permalink: "#"
+
+## Plugin settings
+plugins:
+  - search
+  - macros
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+        remove_comments: true
