@@ -55,7 +55,7 @@ extra:
   ### this extra key generates a license text after copyright
   ### must have name and link
   license:
-    name: GPL3+
+    name: MIT
     link: https://github.com/aasmpro/python3tutorials/blob/master/LICENSE
 
   ## Made with
@@ -131,7 +131,11 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.caret
   - pymdownx.smartsymbols
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.snippets
   - pymdownx.tabbed
   - pymdownx.tilde

@@ -53,9 +53,16 @@ input.md-search__input::-ms-input-placeholder {
   border: 2px solid var(--md-primary-fg-color);
 }
 
-/* Strong */
-.md-typeset strong {
-  color: var(--color-yellow0)
+/* Header */
+.md-header__title {
+  padding-top: 0.5rem;
+}
+
+/* Footer */
+.md-footer-copyright {
+  font-size: 0.6rem;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
 /* Set different color for headers */
